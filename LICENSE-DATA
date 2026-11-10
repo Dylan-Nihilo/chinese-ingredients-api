@@ -1,0 +1,26 @@
+SPDX-License-Identifier: CC0-1.0
+
+CC0 1.0 Universal
+
+To the extent possible under law, Chinese Ingredient API contributors waive
+all copyright and related or neighboring rights in their contributions to
+the dataset in data/ and its generated exports, under the CC0 1.0 Universal
+Public Domain Dedication:
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The authoritative legal text is incorporated by reference:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This dedication applies only to rights held by the contributors. It does not
+waive or relicense third-party rights. Structured facts and labels sourced
+from Wikidata are made available by Wikidata under CC0. See NOTICE.md and
+data/sources.json for sources, upstream license information and scope.
+
+This dataset is provided without warranties, including completeness,
+correctness, suitability for any purpose, or freedom from third-party rights.
+It is not dietary, medical, food-safety or allergen advice.
+
+Code is separately licensed under the MIT License in LICENSE. No icon assets
+are included. Reference websites, linked articles, photographs, trademarks
+and other content outside this repository are not covered by this dedication.

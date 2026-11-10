@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "0.1.0",
+  "releasedAt": "2026-11-10",
+  "license": "CC0-1.0",
+  "scope": {
+    "includes": [
+      "18项经过Wikidata逐项核验的中文食材名称",
+      "蔬菜、食用菌、畜肉、坚果和籽仁"
+    ],
+    "excludes": [
+      "调料、盐、糖、油、酱料、香辛料",
+      "葱姜蒜等食材与调料边界待定条目",
+      "食谱、菜品、营养成分、医疗或食用安全建议",
+      "图片与图标素材",
+      "部位、切法、品牌和加工变体的自动同义词合并"
+    ]
+  },
+  "ingredients": [
+    {
+      "id": "ing_000001",
+      "name": "土豆",
+      "aliases": [
+        {
+          "name": "马铃薯",
+          "locale": "zh-CN"
+        },
+        {
+          "name": "洋芋",
+          "locale": "zh-CN"
+        }
+      ],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q10998",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name",
+            "aliases"
+          ],
+          "note": "taxon common name：土豆、马铃薯、洋芋。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000002",
+      "name": "番茄",
+      "aliases": [
+        {
+          "name": "西红柿",
+          "locale": "zh-CN"
+        }
+      ],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23501",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name",
+            "aliases"
+          ],
+          "note": "taxon common name：番茄、西红柿。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000003",
+      "name": "黄瓜",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23425",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：黄瓜；已解析Q12835405重定向。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000004",
+      "name": "茄子",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7540",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：茄子；已解析Q13144229重定向。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000005",
+      "name": "胡萝卜",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q81",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "结构化中文站点链接标题：胡萝卜。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000008",
+      "name": "菠菜",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q81464",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：菠菜。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000013",
+      "name": "生菜",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q83193",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：生菜。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000016",
+      "name": "花椰菜",
+      "aliases": [
+        {
+          "name": "菜花",
+          "locale": "zh-CN"
+        }
+      ],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7537",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name",
+            "aliases"
+          ],
+          "note": "taxon common name：花椰菜、菜花。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000018",
+      "name": "冬瓜",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q652206",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：冬瓜。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000021",
+      "name": "苦瓜",
+      "aliases": [
+        {
+          "name": "凉瓜",
+          "locale": "zh-CN"
+        }
+      ],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q428750",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name",
+            "aliases"
+          ],
+          "note": "taxon common name：苦瓜、凉瓜。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000023",
+      "name": "洋葱",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23485",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：洋葱。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000026",
+      "name": "甘薯",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q37937",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：甘薯。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000035",
+      "name": "豌豆",
+      "aliases": [],
+      "categoryId": "vegetables",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q25237",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：豌豆；已解析Q31696297重定向。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000037",
+      "name": "香菇",
+      "aliases": [],
+      "categoryId": "mushrooms",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q320999",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：香菇。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000039",
+      "name": "平菇",
+      "aliases": [],
+      "categoryId": "mushrooms",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q186451",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "结构化中文站点链接标题：平菇。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000048",
+      "name": "猪肉",
+      "aliases": [],
+      "categoryId": "meat",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q191768",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "结构化吴语站点链接标题：猪肉。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000049",
+      "name": "牛肉",
+      "aliases": [],
+      "categoryId": "meat",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q192628",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "结构化中文站点链接标题：牛肉。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    },
+    {
+      "id": "ing_000061",
+      "name": "花生",
+      "aliases": [],
+      "categoryId": "nuts",
+      "kind": "ingredient",
+      "description": null,
+      "icon": null,
+      "sourceRefs": [
+        {
+          "sourceId": "wikidata",
+          "url": "https://www.wikidata.org/wiki/Q37383",
+          "accessedAt": "2026-11-10",
+          "fields": [
+            "name"
+          ],
+          "note": "taxon common name：花生。仅取结构化名称事实；厨房用途分类和首选显示名称由本项目整理，植物或真菌实体不等同于食材实体。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>食材 API · 本地文档</title>
+<style>body{max-width:820px;margin:3rem auto;padding:0 1.5rem;font:16px/1.8 system-ui,sans-serif;color:#203c32;background:#fafbf8}h1{font-size:2rem}a{color:#087f5b}code{background:#eaf1e9;padding:.15rem .4rem;border-radius:4px}pre{overflow:auto;background:#eaf1e9;padding:1rem;border-radius:10px}li{margin:.6rem 0}.note{border-left:3px solid #c2a15c;padding-left:1rem}</style></head>
+<body><p>CHINESE INGREDIENT API · v0.1.0</p><h1>从一份可信的食材数据开始。</h1>
+<p>为中国菜谱提供稳定 ID、中文名、别名、分类和来源。首版仅有少量人工核验的食材种子，不含调味品，不宣称覆盖完整。</p>
+<p class="note">图标与描述暂为空。许可证、来源和数据版本见 <a href="/v1/meta">数据元信息</a> 与 <a href="/v1/sources">来源目录</a>。</p>
+<h2>接口</h2><ul>
+<li><a href="/v1/ingredients">GET /v1/ingredients</a>：食材列表，默认 20 条。</li>
+<li><a href="/v1/ingredients?q=%E7%95%AA%E8%8C%84">GET /v1/ingredients?q=番茄</a>：搜索规范名与显式收录的别名。</li>
+<li>GET /v1/ingredients/{id}：单条食材。</li>
+<li><a href="/v1/categories">GET /v1/categories</a>：分类。</li>
+<li><a href="/v1/sources">GET /v1/sources</a>：来源和第三方许可。</li>
+<li><a href="/v1/meta">GET /v1/meta</a>：版本、数量和校验和。</li>
+<li><a href="/openapi.json">OpenAPI 3.1 规范</a>：可供客户端生成与接口导入。</li></ul>
+<h2>筛选与分页</h2><p>列表支持 q、category、limit（1–100）、offset（0–1000000）。category 的有效值以分类接口为准。未知或重复参数返回 400；不存在的 ID 返回 404。无搜索时按稳定 ID 排序；有搜索时依次按规范名精确、别名精确、规范名前缀、别名前缀、规范名包含、别名包含排序，再按 ID 排序。</p>
+<pre>curl --get 'http://127.0.0.1:8000/v1/ingredients' \
+  --data-urlencode 'q=番茄' --data-urlencode 'limit=10'</pre>
+<h2>离线下载</h2><p><a href="/v1/exports/ingredients.json">食材 JSON</a> · <a href="/v1/exports/ingredients.csv">食材 CSV</a> · <a href="/v1/exports/categories.json">分类 JSON</a> · <a href="/v1/exports/sources.json">来源 JSON</a></p>
+<p>JSON 与服务启动时载入的文件逐字节相同。CSV 中 aliases、sourceRefs、description、icon 使用 JSON 字符串保存，避免嵌套信息丢失。UTF-8，无 BOM。</p>
+<h2>边界</h2><p>本地开发服务器默认仅监听 127.0.0.1。无鉴权、无写接口、无运行时抓取，不是生产部署方案。搜索只覆盖已收录别名，不做自动繁简转换、拼音、营养推断或模糊纠错。</p>
+</body></html>

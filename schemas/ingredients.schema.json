@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chinese Ingredient API: ingredients",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "releasedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "includes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "excludes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "includes",
+        "excludes"
+      ]
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ingredient"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "releasedAt",
+    "license",
+    "scope",
+    "ingredients"
+  ],
+  "$defs": {
+    "ingredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ing_[0-9]{6}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alias"
+          }
+        },
+        "categoryId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "ingredient"
+        },
+        "description": {
+          "type": "null"
+        },
+        "icon": {
+          "type": "null"
+        },
+        "sourceRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceRef"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "aliases",
+        "categoryId",
+        "kind",
+        "description",
+        "icon",
+        "sourceRefs"
+      ]
+    },
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "enum": [
+            "zh-CN",
+            "zh-TW",
+            "zh-HK",
+            "zh"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "locale"
+      ]
+    },
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "name",
+              "aliases",
+              "categoryId"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "sourceId",
+        "url",
+        "accessedAt",
+        "fields",
+        "note"
+      ]
+    }
+  }
+}

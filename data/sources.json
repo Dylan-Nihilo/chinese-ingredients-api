@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "wikidata",
+      "title": "Wikidata structured names and sitelink metadata",
+      "url": "https://www.wikidata.org/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "licenseNote": "2026-11-10单独核对许可页：主名字空间结构化数据为CC0。逐项仅提取名称事实与少量已核对同义名称，不导入百科文章、描述、图片或其他名字空间文本。",
+      "accessedAt": "2026-11-10"
+    }
+  ]
+}

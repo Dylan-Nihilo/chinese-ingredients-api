@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": "vegetables",
+      "name": "蔬菜",
+      "description": "按厨房用途整理的蔬菜，包括根茎、叶菜、瓜果和鲜食豆类。"
+    },
+    {
+      "id": "mushrooms",
+      "name": "食用菌",
+      "description": "供烹饪使用的食用菌名称；不用于野生菌鉴定。"
+    },
+    {
+      "id": "meat",
+      "name": "畜肉",
+      "description": "按食用肉来源整理，不包含部位和切法。"
+    },
+    {
+      "id": "nuts",
+      "name": "坚果和籽仁",
+      "description": "可用于烹饪的坚果与籽仁，不包含提取油脂。"
+    }
+  ]
+}

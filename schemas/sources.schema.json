@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chinese Ingredient API: sources",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "licenseUrl": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "licenseNote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessedAt": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "license",
+          "licenseUrl",
+          "licenseNote",
+          "accessedAt"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "sources"
+  ]
+}
