@@ -33,6 +33,9 @@ def error(status: int, code: str, message: str) -> Response:
 
 
 def parse_query(raw: str, allowed: set[str]) -> dict[str, str]:
+    # Python 3.10 strict parse_qs rejects an empty query; newer versions accept it.
+    if not raw:
+        return {}
     try:
         if re.search(r"%(?![0-9a-fA-F]{2})", raw):
             raise ValueError("invalid percent encoding")

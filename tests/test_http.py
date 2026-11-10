@@ -5,7 +5,7 @@ from http.client import HTTPConnection
 from urllib.parse import urlencode
 
 from ingredient_api.catalog import Catalog, ROOT
-from ingredient_api.http import Application, make_server
+from ingredient_api.http import Application, make_server, parse_query
 
 
 class ApplicationTests(unittest.TestCase):
@@ -17,6 +17,9 @@ class ApplicationTests(unittest.TestCase):
     def get(self, path):
         response = self.app.handle('GET', path)
         return response.status, json.loads(response.body)
+
+    def test_empty_raw_query_is_valid_on_all_supported_pythons(self):
+        self.assertEqual(parse_query("", set()), {})
 
     def test_default_pagination(self):
         status, body = self.get('/v1/ingredients')
